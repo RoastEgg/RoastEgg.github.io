@@ -6,14 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>安卓UI框架（下） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="安卓UI框架（下）7.android-lockpattern Android的图案密码解锁 项目地址：https://code.google.com/p/android-lockpattern/ Demo地址：https://play.google.com/store/apps/details?id=group.pals.android.lib.ui.lockpattern.demo 文档介绍：h">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安卓UI框架（下）">
+<meta property="og:url" content="http://yoursite.com/2017/06/27/AndroidUI2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="安卓UI框架（下）7.android-lockpattern Android的图案密码解锁 项目地址：https://code.google.com/p/android-lockpattern/ Demo地址：https://play.google.com/store/apps/details?id=group.pals.android.lib.ui.lockpattern.demo 文档介绍：h">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201502/09/1423462562_3964.gif-thumb.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201502/09/1423462956_6647.gif-thumb.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201502/09/1423464450_9931.gif-thumb.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201502/09/1423465601_1022.gif-thumb.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201503/21/1426920463_6161.gif">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201503/21/1426920817_9915.gif-thumb.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201503/21/1426921161_3650.gif-thumb.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201503/21/1426921441_6496.gif-thumb.jpg">
+<meta property="og:updated_time" content="2017-06-27T15:01:19.242Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="安卓UI框架（下）">
+<meta name="twitter:description" content="安卓UI框架（下）7.android-lockpattern Android的图案密码解锁 项目地址：https://code.google.com/p/android-lockpattern/ Demo地址：https://play.google.com/store/apps/details?id=group.pals.android.lib.ui.lockpattern.demo 文档介绍：h">
+<meta name="twitter:image" content="http://img.my.csdn.net/uploads/201502/09/1423462562_3964.gif-thumb.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -149,16 +162,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-AndroidUI2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-AndroidUI2" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/27/AndroidUI2/">安卓UI框架（下）</a>
+    <h1 class="article-title" itemprop="name">
+      安卓UI框架（下）
     </h1>
   
 
@@ -196,68 +207,26 @@
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/27/AndroidUI2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-volley" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/13/volley/">Volley框架</a>
-    </h1>
-  
-
-        
-        <a href="/2017/06/13/volley/" class="archive-article-date">
-  	<time datetime="2017-06-13T15:10:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Volley框架"><a href="#Volley框架" class="headerlink" title="#Volley框架"></a>#Volley框架</h2><p>Volley 是 Google 推出的 Android 异步网络请求框架和图片加载框架。</p>
-<hr>
-<p><strong>1.volleye的总体设计图</strong><br><img src="https://raw.githubusercontent.com/android-cn/android-open-project-analysis/master/tool-lib/network/volley/image/design.png" alt="cmd-markdwon-logo"></p>
-<hr>
-<p><strong>2.volley的请求流程图</strong><br><img src="https://raw.githubusercontent.com/android-cn/android-open-project-analysis/master/tool-lib/network/volley/image/Volley-run-flow-chart.png" alt="cmd-markdown-logo"></p>
-<hr>
-<p><strong>3.核心类功能介绍</strong><br>3.2.1 Volley.java<br>这个和 Volley 框架同名的类，其实是个工具类，作用是构建一个可用于添加网络请求的RequestQueue对象。<br>(1). 主要函数<br>Volley.java 有两个重载的静态方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> RequestQueue <span class="title">newRequestQueue</span><span class="params">(Context context)</span></span></div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="keyword">static</span> RequestQueue <span class="title">newRequestQueue</span><span class="params">(Context context, HttpStack stack)</span></div></pre></td></tr></table></figure>
-<p>第一个方法的实现调用了第二个方法，传 HttpStack 参数为 null。<br>第二个方法中，如果 HttpStatck 参数为 null，则如果系统在 Gingerbread 及之后(即 API Level &gt;= 9)，采用基于 HttpURLConnection 的 HurlStack，如果小于 9，采用基于 HttpClient 的 HttpClientStack。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (stack == <span class="keyword">null</span>) &#123;</div><div class="line">    <span class="keyword">if</span> (Build.VERSION.SDK_INT &gt;= <span class="number">9</span>) &#123;</div><div class="line">        stack = <span class="keyword">new</span> HurlStack();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        stack = <span class="keyword">new</span> HttpClientStack(AndroidHttpClient.newInstance(userAgent));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>得到了 HttpStack,然后通过它构造一个代表网络（Network）的具体实现BasicNetwork。<br>接着构造一个代表缓存（Cache）的基于 Disk 的具体实现DiskBasedCache。<br>最后将网络（Network）对象和缓存（Cache）对象传入构建一个 RequestQueue，启动这个 RequestQueue，并返回。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Network network = <span class="keyword">new</span> BasicNetwork(stack);</div><div class="line">RequestQueue queue = <span class="keyword">new</span> RequestQueue(<span class="keyword">new</span> DiskBasedCache(cacheDir), network);</div><div class="line">queue.start();</div><div class="line"><span class="keyword">return</span> queue;</div></pre></td></tr></table></figure></p>
-<p>我们平时大多采用Volly.newRequestQueue(context)的默认实现，构建 RequestQueue。<br>通过源码可以看出，我们可以抛开 Volley 工具类构建自定义的 RequestQueue，采用自定义的HttpStatck，采用自定义的Network实现，采用自定义的 Cache 实现等来构建RequestQueue。<br>优秀框架的高可拓展性的魅力来源于此啊<br>(2). HttpURLConnection 和 AndroidHttpClient(HttpClient 的封装)如何选择及原因：<br>在 Froyo(2.2) 之前，HttpURLConnection 有个重大 Bug，调用 close() 函数会影响连接池，导致连接复用失效，所以在 Froyo 之前使用 HttpURLConnection 需要关闭 keepAlive。<br>另外在 Gingerbread(2.3) HttpURLConnection 默认开启了 gzip 压缩，提高了 HTTPS 的性能，Ice Cream Sandwich(4.0) HttpURLConnection 支持了请求结果缓存。<br>再加上 HttpURLConnection 本身 API 相对简单，所以对 Android 来说，在 2.3 之后建议使用 HttpURLConnection，之前建议使用 AndroidHttpClient。<br>(3). 关于 User Agent<br>通过代码我们发现如果是使用 AndroidHttpClient，Volley 还会将请求头中的 User-Agent 字段设置为 App 的 ${packageName}/${versionCode}，如果异常则使用 “volley/0”，不过这个获取 User-Agent 的操作应该放到 if else 内部更合适。而对于 HttpURLConnection 却没有任何操作，为什么呢？<br>如果用 Fiddler 或 Charles 对数据抓包我们会发现，我们会发现 HttpURLConnection 默认是有 User-Agent 的，类似：<br>Dalvik/1.6.0 (Linux; U; Android 4.1.1; Google Nexus 4 - 4.1.1 - API 16 - 768x1280_1 Build/JRO03S)<br>经常用 WebView 的同学会也许会发现似曾相识，是的，WebView 默认的 User-Agent 也是这个。实际在请求发出之前，会检测 User-Agent 是否为空，如果不为空，则加上系统默认 User-Agent。在 Android 2.1 之后，我们可以通过<br>String userAgent = System.getProperty(“http.agent”);<br>得到系统默认的 User-Agent，Volley 如果希望自定义 User-Agent，可在自定义 Request 中重写 getHeaders() 函数<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">public</span> Map&lt;String, String&gt; <span class="title">getHeaders</span><span class="params">()</span> <span class="keyword">throws</span> AuthFailureError </span>&#123;</div><div class="line">    <span class="comment">// self-defined user agent</span></div><div class="line">    Map&lt;String, String&gt; headerMap = <span class="keyword">new</span> HashMap&lt;String, String&gt;();</div><div class="line">    headerMap.put(<span class="string">"User-Agent"</span>, <span class="string">"android-open-project-analysis/1.0"</span>);</div><div class="line">    <span class="keyword">return</span> headerMap;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>4.2.2 Request.java<br>代表一个网络请求的抽象类。我们通过构建一个Request类的非抽象子类(StringRequest、JsonRequest、ImageRequest 或自定义)对象，并将其加入到·RequestQueue·中来完成一次网络请求操作。<br>Volley 支持 8 种 Http 请求方式 GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, PATCH<br>Request 类中包含了请求 url，请求请求方式，请求 Header，请求 Body，请求的优先级等信息。<br>因为是抽象类，子类必须重写的两个方法。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">abstract</span> <span class="keyword">protected</span> Response&lt;T&gt; <span class="title">parseNetworkResponse</span><span class="params">(NetworkResponse response)</span></span>;</div></pre></td></tr></table></figure></p>
-<p>子类重写此方法，将网络返回的原生字节内容，转换成合适的类型。此方法会在工作线程中被调用。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">abstract</span> <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">deliverResponse</span><span class="params">(T response)</span></span>;</div></pre></td></tr></table></figure></p>
-<p>子类重写此方法，将解析成合适类型的内容传递给它们的监听回调。<br>以下两个方法也经常会被重写<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">byte</span>[] getBody()</div></pre></td></tr></table></figure></p>
-<p>重写此方法，可以构建用于 POST、PUT、PATCH 请求方式的 Body 内容。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">protected</span> Map&lt;String, String&gt; <span class="title">getParams</span><span class="params">()</span></span></div></pre></td></tr></table></figure></p>
-<p>在上面getBody函数没有被重写情况下，此方法的返回值会被 key、value 分别编码后拼装起来转换为字节码作为 Body 内容。</p>
-
-      
-
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -266,132 +235,85 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/13/volley/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/27/AndroidUI2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
-
-
-
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/21/hello-world/">Hello World</a>
-    </h1>
   
-
-        
-        <a href="/2017/05/21/hello-world/" class="archive-article-date">
-  	<time datetime="2017-05-21T12:04:33.895Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/21/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
+    <a href="/2017/06/13/volley/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Volley框架</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
 
 
   
-    <article id="post-AndroidUI1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/10/AndroidUI1/">安卓UI框架（上）</a>
-    </h1>
   
 
-        
-        <a href="/2017/05/10/AndroidUI1/" class="archive-article-date">
-  	<time datetime="2017-05-10T15:10:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="安卓UI框架（上）"><a href="#安卓UI框架（上）" class="headerlink" title="安卓UI框架（上）"></a>安卓UI框架（上）</h1><p>1.Side-Menu.Android<br>分类侧滑菜单，Yalantis 出品。<br>项目地址：<a href="https://github.com/Yalantis/Side-Menu.Android" target="_blank" rel="external">https://github.com/Yalantis/Side-Menu.Android</a><br><img src="http://img.my.csdn.net/uploads/201502/06/1423213091_2192.gif-thumb.jpg" alt=""></p>
-<p>2.Context-Menu.Android<br>可以方便快速集成漂亮带有动画效果的上下文菜单，Yalantis出品。<br>项目地址：<a href="https://github.com/Yalantis/Context-Menu.Android" target="_blank" rel="external">https://github.com/Yalantis/Context-Menu.Android</a><br><img src="http://img.my.csdn.net/uploads/201502/06/1423213164_4792.gif-thumb.jpg" alt=""></p>
-<p>3.Pull-to-Refresh.Rentals-Android<br>提供一个简单可以自定义的下拉刷新实现，Yalantis 出品。<br>项目地址：<a href="https://github.com/Yalantis/Pull-to-Refresh.Rentals-Android" target="_blank" rel="external">https://github.com/Yalantis/Pull-to-Refresh.Rentals-Android</a><br><img src="http://img.my.csdn.net/uploads/201502/06/1423211132_9821.gif-thumb.jpg" alt=""></p>
-<p>4.Titanic<br>可以显示水位上升下降的TextView<br>项目地址：<a href="https://github.com/RomainPiel/Titanic" target="_blank" rel="external">https://github.com/RomainPiel/Titanic</a><br><img src="http://img.my.csdn.net/uploads/201502/06/1423213775_1197.gif-thumb.jpg" alt=""></p>
-<p>5.AndroidSwipeLayout<br>滑动Layout，支持单个View，ListView，GridView<br>项目地址：<a href="https://github.com/daimajia/AndroidSwipeLayout" target="_blank" rel="external">https://github.com/daimajia/AndroidSwipeLayout</a><br>Demo地址：Download Demo<br><img src="http://img.my.csdn.net/uploads/201502/09/1423460378_5762.gif-thumb.jpg" alt=""></p>
-<p>6.Android Typeface Helper<br>可以帮你轻松实现自定义字体的库<br>项目地址：<a href="https://github.com/norbsoft/android-typeface-helper" target="_blank" rel="external">https://github.com/norbsoft/android-typeface-helper</a><br><img src="http://img.my.csdn.net/uploads/201502/09/1423460828_5536.png" alt=""></p>
-<p>转载：<a href="http://www.androidchina.net/1992.html，作者：loading" target="_blank" rel="external">http://www.androidchina.net/1992.html，作者：loading</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/10/AndroidUI1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
   
+
   
 
 
@@ -414,8 +336,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
